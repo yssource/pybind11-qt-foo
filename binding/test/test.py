@@ -1,10 +1,11 @@
 # -*- coding: utf-8 -*-
 
 import unittest
-import libfoo as foo
+# import libfoo as foo
+import foo
 
-class MathTest(unittest.TestCase):
-    def testFoo2(self):
+class MainTest(unittest.TestCase):
+    def testFoo(self):
         print(foo.foo2())
         self.assertEqual(foo.add(5, 5), 10)
 

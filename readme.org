@@ -1,5 +1,5 @@
 # -*- mode:org; epa-file-encrypt-to: ("yssource@163.com"); org-confirm-babel-evaluate: nil -*-
-#+TITLE: Demo for shiboken2
+#+TITLE: Demo for Pybind11 with Qt5
 #+AUTHOR: Jimmy M. Gong
 #+EMAIL: yssource@163.com
 #+LANGUAGE: zh-Hans
@@ -69,6 +69,7 @@
   #+begin_src bash
     make envs # run only once to configure envirnoments, !important!
     make all
+    python ./binding/test/test.py
   #+end_src
 
 * COMMENT Local Variables                                           :ARCHIVE:

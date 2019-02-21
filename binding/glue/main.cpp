@@ -17,13 +17,13 @@ int foo2() {
   a.setValue(12); // a.value() == 12, b.value() == 12
 
   cout << a.getCounter().data() << endl;
-  cout << a.squared(44) << endl;
-  return a.squared(55);
+  cout << a.squared(88) << endl;
+  return a.squared(10);
 }
 
 namespace py = pybind11;
 
-PYBIND11_MODULE(libfoo, m) {
+PYBIND11_MODULE(foo, m) {
     m.doc() = R"pbdoc(
         Pybind11 example plugin
         -----------------------

@@ -12,7 +12,7 @@ OBJECTS_DIR = obj
 SOURCES += test.cpp
 DEFINES += LIBFOO_BUILD
 
-unix:LIBS += -Wl,-rpath,. -Wl,-rpath,../lib -L../lib -lfoo2
+unix:LIBS += -Wl,-rpath,. -Wl,-rpath,../lib -L../lib -lfoo
 unix:INCLUDEPATH += ../src
 linux-*:LIBS += -lrt
 

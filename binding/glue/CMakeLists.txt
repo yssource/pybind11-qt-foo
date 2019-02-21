@@ -5,13 +5,11 @@ set(CMAKE_CXX_STANDARD 11)
 
 # The sample library for which we will create bindings. You can change the name to something
 # relevant for your project.
-set(sample_library "libfoo2.so")
-# set(sample_library "foo2.so")
+set(sample_library "libfoo.so")
 
 # The name of the generated bindings module (as imported in Python). You can change the name
 # to something relevant for your project.
-# set(bindings_library "foo")
-set(bindings_library "libfoo")
+set(bindings_library "foo")
 
 # set(CMAKE_CXX_FLAGS_RELEASE "-O0")
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DDATABASE_SQLITE -D_GLIBCXX_USE_CXX11_ABI=1")
