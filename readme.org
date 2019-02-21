@@ -1,0 +1,78 @@
+# -*- mode:org; epa-file-encrypt-to: ("yssource@163.com"); org-confirm-babel-evaluate: nil -*-
+#+TITLE: Demo for shiboken2
+#+AUTHOR: Jimmy M. Gong
+#+EMAIL: yssource@163.com
+#+LANGUAGE: zh-Hans
+#+OPTIONS: H:3 num:nil toc:nil \n:t ::t |:t ^:nil -:nil f:t *:t <:t html-postamble:nil html-preamble:t tex:t
+#+URI: /blog/%y/%m/%d/
+#+DATE: 2019-02-20
+#+LAYOUT: post
+#+TAGS: OFFICE(o) COMPUTER(c) HOME(h) PROJECT(p) READING(r) DVD(d)
+#+CATEGORIES:
+#+DESCRIPTON:
+#+KEYWORDS:
+#+STARTUP: overview
+#+STARTUP: hidestars
+#+STARTUP: logdone
+#+STARTUP: indent
+
+* COMMENT Debuger
+* structure
+  #+begin_src bash
+    .
+    ├── ./binding
+    │   ├── ./binding/CMakeLists.txt
+    │   ├── ./binding/glue
+    │   │   ├── ./binding/glue/CMakeLists.txt
+    │   │   └── ./binding/glue/main.cpp
+    │   └── ./binding/test
+    │       ├── ./binding/test/CMakeLists.txt
+    │       └── ./binding/test/test.py
+    ├── ./CMakeLists.txt
+    ├── ./conanfile.py
+    ├── ./.editorconfig
+    ├── ./.git
+    ├── ./.gitignore
+    ├── ./lib
+    │   ├── ./lib/libfoo2.so -> libfoo2.so.1.0.0
+    │   ├── ./lib/libfoo2.so.1 -> libfoo2.so.1.0.0
+    │   ├── ./lib/libfoo2.so.1.0 -> libfoo2.so.1.0.0
+    │   ├── ./lib/libfoo2.so.1.0.0
+    │   └── ./lib/libfoo.so
+    ├── ./makefile
+    ├── ./readme.org
+    ├── ./src
+    │   ├── ./src/foo.cpp
+    │   ├── ./src/foo.h
+    │   ├── ./src/libfoo2.so -> libfoo2.so.1.0.0
+    │   ├── ./src/libfoo2.so.1 -> libfoo2.so.1.0.0
+    │   ├── ./src/libfoo2.so.1.0 -> libfoo2.so.1.0.0
+    │   ├── ./src/libfoo2.so.1.0.0
+    │   ├── ./src/Makefile
+    │   ├── ./src/moc_foo.cpp
+    │   ├── ./src/moc_predefs.h
+    │   ├── ./src/obj
+    │   │   ├── ./src/obj/foo.o
+    │   │   └── ./src/obj/moc_foo.o
+    │   ├── ./src/.qmake.stash
+    │   └── ./src/src.pro
+    └── ./test
+        ├── ./test/Makefile
+        ├── ./test/obj
+        │   └── ./test/obj/test.o
+        ├── ./test/.qmake.stash
+        ├── ./test/test
+        ├── ./test/test.cpp
+        └── ./test/test.pro
+  #+end_src
+* How to
+  #+begin_src bash
+    make envs # run only once to configure envirnoments, !important!
+    make all
+  #+end_src
+
+* COMMENT Local Variables                                           :ARCHIVE:
+# Local Variables:
+# fill-column: 70
+# eval: (auto-fill-mode 1)
+# End:
